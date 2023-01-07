@@ -1,8 +1,8 @@
 # TooDiet-Project_Kotlin
 
 ##หน้ากรอกข้อมูลส่วนตัว
-<img width="450" src="https://user-images.githubusercontent.com/86826210/211158061-a1cfdd0d-4191-4518-b797-f3fa762eeb16.png">
-<img width="450" src="https://user-images.githubusercontent.com/86826210/211158063-4c63dced-b0cc-46ea-9d2c-0d0c5a6982d2.png">
+<img width="400" src="https://user-images.githubusercontent.com/86826210/211158061-a1cfdd0d-4191-4518-b797-f3fa762eeb16.png">
+<img width="400" src="https://user-images.githubusercontent.com/86826210/211158063-4c63dced-b0cc-46ea-9d2c-0d0c5a6982d2.png">
 <img width="500" src="https://user-images.githubusercontent.com/86826210/211158064-66b0acdc-d807-4e03-9697-1910d72373f7.png">
 <img width="500" src="https://user-images.githubusercontent.com/86826210/211158065-9501fd73-e5d6-4b4e-8261-fa9e7093e153.png">
 <img width="500" src="https://user-images.githubusercontent.com/86826210/211158067-8740eb0a-3322-47e3-8e07-d08ccfa49cea.png">
