@@ -14,7 +14,10 @@
 <img width="800" src="https://user-images.githubusercontent.com/86826210/211158067-8740eb0a-3322-47e3-8e07-d08ccfa49cea.png">
 <img width="800" src="https://user-images.githubusercontent.com/86826210/211158068-5114ae2e-836d-44e1-8a7a-8d0b89f5df31.png">
 
-<img width="800" src="https://user-images.githubusercontent.com/86826210/211158063-4c63dced-b0cc-46ea-9d2c-0d0c5a6982d2.png">
+## หน้า Setting ข้อมูล่สวนตัว
+<img width="800" src="https://user-images.githubusercontent.com/86826210/211158813-b399188c-47be-417a-9528-a8855f65f273.png">
+
+## Database 
 <img width="800" src="https://user-images.githubusercontent.com/86826210/211158069-afc6a593-59df-4a50-8c85-eb9ca049e367.png">
 <img width="800" src="https://user-images.githubusercontent.com/86826210/211158070-14a56cb4-b2cd-45b1-92fe-81fe5a0e480a.png">
 <img width="800" src="https://user-images.githubusercontent.com/86826210/211158071-1beea454-73c5-4f08-8e9f-273b8b6045bb.png">
