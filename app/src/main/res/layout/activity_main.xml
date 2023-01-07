@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain2"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/TitleTextHead"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn1">
+
+        <TextView
+            android:id="@+id/txtTooDiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="TooDiet Application"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/SecondBackground"
+        android:layout_width="400dp"
+        android:layout_height="657dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/bgsecond"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/logo1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/btn1">
+
+            <ImageView
+                android:id="@+id/imgLogo1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_fast_food_black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/logo2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/logo1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/btn1">
+
+            <ImageView
+                android:id="@+id/imgLogo2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_exercise" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/logo3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/logo2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/btn1">
+
+            <ImageView
+                android:id="@+id/imgLogo3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_setting" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/logo4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/logo3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/btn1">
+
+            <ImageView
+                android:id="@+id/imgLogo4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_about_us" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/Row1"
+            android:layout_width="230dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/btn1">
+
+            <TextView
+                android:id="@+id/txtTitle1"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/raleway"
+                android:text="Calories"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDesc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitle1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/raleway"
+                android:text="คำนวณแคลอรี่\nจากอาหาร"
+                android:textColor="#575757"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Row2"
+            android:layout_width="230dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/Row1"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/btn1">
+
+            <TextView
+                android:id="@+id/txtDesc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitle2"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/raleway"
+                android:text="คำนวณแคลอรี่\nจากการออกกำลังกาย"
+                android:textColor="#575757"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtTitle2"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/raleway"
+                android:text="Exercise"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Row3"
+            android:layout_width="230dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/Row2"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/btn1">
+
+            <TextView
+                android:id="@+id/txtDesc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitle3"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/raleway"
+                android:text="ตั้งค่าข้อมูล"
+                android:textColor="#575757"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtTitle3"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway"
+                android:text="Setting"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Row4"
+            android:layout_width="230dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/Row3"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/btn1">
+
+            <TextView
+                android:id="@+id/txtDesc4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitle4"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/raleway"
+                android:text="ข้อมูลผู้พัฒนา"
+                android:textColor="#575757"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtTitle4"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway"
+                android:text="About Us"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

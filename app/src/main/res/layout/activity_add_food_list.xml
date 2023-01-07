@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain">
+
+    <RelativeLayout
+        android:id="@+id/backbutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_left_arrow" />
+    </RelativeLayout>
+
+    <android.widget.Button
+        android:id="@+id/btnFLSave"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonbackground"
+        android:fontFamily="@font/raleway"
+        android:text="บันทึก"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </android.widget.Button>
+
+    <RelativeLayout
+        android:id="@+id/TitleText"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn1">
+
+        <TextView
+            android:id="@+id/txtAddFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="เพิ่มรายการอาหาร"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/SecondBackground"
+        android:layout_width="400dp"
+        android:layout_height="657dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/bgsecond"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/Type"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/btn1">
+
+            <Spinner
+                android:id="@+id/sp_option"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="13dp"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/txtType"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway"
+                android:text="ชนิด"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editType"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtType"
+                android:ems="10"
+                android:hint="Type"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/FoodName"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/Type"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/btn1">
+
+            <TextView
+                android:id="@+id/txtFoodName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway"
+                android:text="ชื่ออาหาร"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editFoodName"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtFoodName"
+                android:background="@null"
+                android:ems="10"
+                android:hint="กระเพรา, ข้าวผัด"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Amount"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/FoodName"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/btn1">
+
+            <TextView
+                android:id="@+id/txtAmount"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway"
+                android:text="จำนวน"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editFLAmount"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtAmount"
+                android:background="@null"
+                android:ems="10"
+                android:hint="1 จาน, 2 ชิ้น, 1 อัน"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Calories"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/Amount"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/btn1">
+
+            <TextView
+                android:id="@+id/txtCalories"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway"
+                android:text="แคลอรี่"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editFLCalories"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtCalories"
+                android:background="@null"
+                android:ems="10"
+                android:hint="ปริมาณแคลอรี่"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

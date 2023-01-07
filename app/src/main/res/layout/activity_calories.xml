@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Target_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain"
+    tools:context=".CaloriesActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/male"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/cardbackgroung">
+
+        <TextView
+            android:id="@+id/txtTarget"
+            android:layout_width="236dp"
+            android:layout_height="39dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/raleway"
+            android:gravity="center"
+            android:text="เป้าหมายของคุณ"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <android.widget.Button
+        android:id="@+id/saveResultNo2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonbackground"
+        android:fontFamily="@font/raleway"
+        android:text="บันทึก"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </android.widget.Button>
+
+    <RelativeLayout
+        android:id="@+id/date"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/kgTarget"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/cardbackgroung">
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/raleway"
+            android:gravity="center"
+            android:text="ต้องการลดกี่วัน"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/kgTarget"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/male"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/cardbackgroung">
+
+        <SeekBar
+            android:id="@+id/sbForTargetKg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:progressTint="#FF4C4C"
+            android:thumbTint="@color/white">
+
+        </SeekBar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/raleway"
+            android:text="ต้องการลดน้ำหนักกี่กิโลกรัม"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/textTargetKg"
+            android:fontFamily="@font/raleway"
+            android:text="kg"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textTargetKg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold">
+
+        </TextView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

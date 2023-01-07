@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain">
+
+    <RelativeLayout
+        android:id="@+id/backbutton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_left_arrow" />
+    </RelativeLayout>
+
+    <android.widget.Button
+        android:id="@+id/btnExSave"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonbackground"
+        android:fontFamily="@font/raleway"
+        android:text="บันทึก"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </android.widget.Button>
+
+    <RelativeLayout
+        android:id="@+id/TitleTextEx"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn1">
+
+        <TextView
+            android:id="@+id/txtAddExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="เพิ่มท่าออกกำลังกาย"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/SecondBackground"
+        android:layout_width="400dp"
+        android:layout_height="657dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/bgsecond"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/ExerciseName"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/btn1">
+
+            <TextView
+                android:id="@+id/txtExerciseName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway"
+                android:text="ชื่อท่าออกกำลังกาย"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editExerciseName"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtExerciseName"
+                android:background="@null"
+                android:ems="10"
+                android:hint="กระโดดตบ, วิดพื้น"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Hour"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/ExerciseName"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/btn1">
+
+            <TextView
+                android:id="@+id/txtHour"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway"
+                android:text="เวลา(นาที)"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editHour"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtHour"
+                android:background="@null"
+                android:ems="10"
+                android:hint="30 นาที, 120 นาที"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/CaloriesEx"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/Hour"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/btn1">
+
+            <TextView
+                android:id="@+id/txtCaloriesEx"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway"
+                android:text="แคลอรี่"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editExCalories"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtCaloriesEx"
+                android:background="@null"
+                android:ems="10"
+                android:hint="ปริมาณแคลอรี่ที่ลดลง"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
