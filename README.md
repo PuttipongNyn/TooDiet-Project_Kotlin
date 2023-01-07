@@ -14,7 +14,7 @@
 <img width="800" src="https://user-images.githubusercontent.com/86826210/211158067-8740eb0a-3322-47e3-8e07-d08ccfa49cea.png">
 <img width="800" src="https://user-images.githubusercontent.com/86826210/211158068-5114ae2e-836d-44e1-8a7a-8d0b89f5df31.png">
 
-## หน้า Setting ข้อมูล่สวนตัว
+## หน้า Setting ข้อมูลส่วนตัว
 <img width="800" src="https://user-images.githubusercontent.com/86826210/211158813-b399188c-47be-417a-9528-a8855f65f273.png">
 
 ## Database 
